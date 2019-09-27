@@ -1,0 +1,15 @@
+INSERT INTO SHEAI1.Scenario_Alias (alias_id,scenario_id,scenario_cntry_code,alias_desc,last_chg_ts,last_chg_userid) VALUES (382,4444, 'WW', 'scenario_alias','CURRENT_TIMESTAMP',8942);
+INSERT INTO SHEAI1.Integration_Scenario(scenario_id,scenario_cntry_code,scenario_name,scenario_desc,category_code,active_ind,last_chg_ts,last_chg_userid) VALUES (333,'US','SH_TEST01','Test sample',1,'Y',CURRENT_TIMESTAMP,'harshi');
+INSERT INTO SHEAI1.Subscription(subscription_id,subscription_desc,active_ind,last_chg_ts,last_chg_userid)VALUES(544,'subscription','Y','CURRENT_TIMESTAMP','harshi');
+INSERT INTO SHEAI1.Service(service_id,service_desc,service_type_code,service_sub_type_code,parent_service_id,active_ind,last_chg_ts,last_chg_userid)VALUES(544,'discription','test','subtype',554,'y',CURRENT_TIMESTAMP,'harshi'); 
+
+
+
+
+<root><ScenarioName>hai</ScenarioName><CountryCode></CountryCode><InstanceID></InstanceID></root>
+
+In Flows, we have different classes involved like EntryFlowService , ExitFlowService ,TransFlowService.
+EntryFlowService: In entry, Hit the cache and built scenario details object and execute hop level and global level services based on configuration and it route to next hop.
+TransFlowService : In Trans, it will transform the data from source application to the target application format using WTX and it will call the corresponding interface WTX Map.
+ExitFlowService : T he exit flow will trigger and Exit Flow will identify the destination application Queue and it will process the data into the Queu e.
+Coming to views we have Scenario details view , Global services view, Hop service view, FTE scenario view, property value view.

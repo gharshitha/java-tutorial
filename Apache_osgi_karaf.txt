@@ -1,0 +1,38 @@
+Download Karaf folder open cmd 
+$ cd   C:\Users\hgurram\Downloads\apache-karaf-4.2.6\bin
+$ .\karaf         or          $ karaf.bat
+karaf@root()>features:install http
+karaf@root()>features:install camel
+karaf@root()>features:install camel-cxf
+
+POM.xml
+<packaging>bundle</packaging>
+<plugin>
+<groupId>org.apache.felix</groupId>
+<artifactId>maven-bundle-plugin</artifactId>
+<version>2.1.0</version>
+<extensions>true</extensions>
+<configuration>
+<instructions>
+<Bundle-Name>${project.artifactId}</Bundle-Name>
+<Bundle-SymbolicName>riderautoparts-osgi</Bundle-SymbolicName>
+<Bundle-Version>${project.version}</Bundle-Version>
+<Bundle-Activator>
+com.example.Apachecamel.Apachecamelxml.ApachecamelxmlApplication
+</Bundle-Activator>
+<Import-Package>*</Import-Package>
+<Export-Package>com.example.Apachecamel.*;version=${project.version}</Export-Package>
+<DynamicImport-Package>*</DynamicImport-Package>
+<Implementation-Title>Rider Auto Parts OSGi</Implementation-Title>
+<Implementation-Version>${project.version}</Implementation-Version>
+</instructions>
+</configuration>
+</plugin>
+
+
+Website LINK:http://www.joern-karthaus.de/blog/karaf.html
+---------------------------------------------------------------
+karaf@root()> install mvn:com.example.Apachecamelxml/0.0.1-SNAPSHOT
+Error executing command: Error installing bundles:
+Unable to install bundle mvn:com.example/Apachecamelxml/0.0.1-SNAPSHOT: 
+org.osgi.framework.BundleException: Unable to cache bundle: mvn:com.example/Apachecamelxml/0.0.1-SNAPSHOT

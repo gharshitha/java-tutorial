@@ -1,0 +1,86 @@
+    Count the number of possible combination of palindromes in a given string
+    How to convert Character array to String object?
+    Compare elements of two arrays and print the common elements.
+    Create a singleton class which should give the single instance of a hash map on null check and load the hash map with user defined data.
+    Validate an XML against an XML Schema and Check whether the XML is valid or not and print the XML in case of valid and print message stating "XML is invalid".
+    Use any third party API of your choice to convert XML to Json and Json to XML
+    Read a file from a folder and replace the date format to MM/DD/YYYY and copy the file to another folder.
+    Implement log4j and log the exceptions to a file and a new file should be created if the log file size exceeds 1MB.
+    Implement custom exception handling and create an exception framework which should give custom exception message for all run time exceptions with class and method name and specific error code for each exception.
+    Create an abstract framework for Car which should be capable of stating a car type, number seats and mileage based on a car type and implement cars like WagonR, Honda city, Innova crysta.
+
+
+
+These are the next set of tasks for this week. Please go through them and reach out to me if any concerns.
+
+    Connect MySQL DB and develop framework to perform crud operations using JDBC. - Sandeep
+    Use hibernate to connect MySQL and develop framework to perform crud operations using HQL. -- prasad
+    Use spring JPA to connect MySQL DB and develop framework to perform crud operations using JDBC. - Sai
+    Connect to Active MQ and develop a process to consume messages, transform and produce to another Queue. -- Vasu
+    Use Spring JMS to connect to Active MQ and develop a process to consume messages, transform and produce to another Queue. -- Harshitha
+
+
+    Create Junit and use Mockito or PowerMockito API and achieve code coverage above 90 percentage.
+    Explore on how to emit application  metrics and use Grafana to visualize them.
+    Use any Mailing API to publish mail to the configured group of people in case of exceptions.
+    Expose Rest service API with all CRUD operation using HTTP methods and add basic authentication and expose through Swagger.
+    Use spring actuator to check service health checks of your Rest API.
+
+
+Use case - Build a camel route which should  read message from a queue and call ITX Rest API for transformation and call another service to enrich and produce to another queue. This complete thing should dynamically configurable through XML.
+
+@Gopi - He will be supporting based on his availability since he needs to work on MFT explorer.
+
+@Sandeep,@Harshitha - You guys need to explore in depth about camel services and their scope and limitations. Create samples on each service and document your understanding.
+
+
+
+
+
+
+
+https://www.javainuse.com/camel/camelSpring
+https://stackoverflow.com/questions/23355393/best-way-to-load-dynamically-routes-in-apache-camel
+https://www.avisi.nl/blog/2014/06/05/creating-camel-routes-on-the-fly-using-osgi
+http://camel.apache.org/loading-routes-from-xml-files.html
+http://camel.apache.org/maven/current/camel-core/apidocs/org/apache/camel/Exchange.html
+
+http://camel.465427.n5.nabble.com/file/n5094066/CamelConfigurationPostProcessor.java
+
+https://grokbase.com/t/camel/users/11cmjt787j/dynamically-loading-xml-configured-routes
+
+https://dzone.com/articles/performance-tuning-ideas-for-apache-camel
+
+https://stackoverflow.com/questions/36057151/apache-camel-calling-one-route-from-another
+
+
+Explore on Camel services
+Create a route using xml with spring camel context and add or update new route dynamically
+https://stackoverflow.com/questions/38775154/how-to-return-jms-answer-in-rest
+
+https://camel.apache.org/http.html
+https://camel.apache.org/file.html
+https://access.redhat.com/documentation/en-us/red_hat_jboss_fuse/6.2/html/apache_camel_development_guide/basicprinciples-exceptionhandling
+
+http://www.javanbeyond.com/camel/calling-java-methods-from-camel-routes-beanclass-component/
+
+
+https://access.redhat.com/documentation/en-us/red_hat_fuse/7.0/html/apache_camel_development_guide/basicprinciples
+
+onException link apachecamel
+http://preparationforinterview.com/preparationforinterview/camel-exception-handling
+http://preparationforinterview.com/preparationforinterview/camel-error-handling
+
+
+camel material links
+https://www.manning.com/books/camel-in-action
+
+Jms activemq links
+https://www.logicbig.com/tutorials/spring-framework/spring-integration/jms-template.html
+
+
+
+rest services methods urls
+https://stackoverflow.com/questions/3366052/is-it-possible-to-kick-off-a-camel-route-using-a-java-interface-or-bean
+https://camel.apache.org/controlbus.html
+https://stackoverflow.com/questions/40998793/apache-camel-load-xml-routes-and-beans-from-file-into-camelcontext
